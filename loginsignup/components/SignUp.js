@@ -43,18 +43,21 @@ export default function SignUp(props) {
                             <TextInput
                                 style={[styles.textInput, focusName && styles.inputFocus]}
                                 placeholder="Enter Your Name"
+                                placeholderTextColor="#666"
                                 onFocus={() => setFocusName(true)}
                                 onBlur={() => setFocusName(false)}
                             />
                             <TextInput
                                 style={[styles.textInput, focusEmail && styles.inputFocus]}
                                 placeholder="Enter Your E-mail"
+                                placeholderTextColor="#666"
                                 onFocus={() => setFocusEmail(true)}
                                 onBlur={() => setFocusEmail(false)}
                             />
                             <TextInput
                                 style={[styles.textInput, focusPhone && styles.inputFocus]}
                                 placeholder="Enter Your Phone"
+                                placeholderTextColor="#666"
                                 onFocus={() => setFocusPhone(true)}
                                 onBlur={() => setFocusPhone(false)}
                             />
@@ -62,6 +65,7 @@ export default function SignUp(props) {
                                 style={[styles.textInput, focusPassword && styles.inputFocus]}
                                 secureTextEntry
                                 placeholder="Enter Your Password"
+                                placeholderTextColor="#666"
                                 onFocus={() => setFocusPassword(true)}
                                 onBlur={() => setFocusPassword(false)}
                             />
@@ -115,6 +119,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         padding: 12,
         fontSize: 16,
+        color:"black",
         backgroundColor: "#fff",
         shadowColor: "#000",
         shadowOffset: { width: 0, height: 2 },
